@@ -1,0 +1,702 @@
+:root{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    --primary-color: #44b2e6;
+    --secondary-color: #0b77a5;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* font: 1.6rem Helvetica; */
+    font: 1.6rem Garamond;
+    height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    width: 100vw;
+}
+a{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+    color: #f1f1f1;
+}
+li{
+    list-style-type: none;
+}
+.brand a:hover{
+    color: #fff;
+}
+.link{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.link:hover{
+    cursor: pointer;
+    color: goldenrod;
+}
+.footer-links #link-out:hover{
+    cursor: pointer;
+    color: goldenrod;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) .3s;
+    transition: ease-out .3s;
+}
+.site-link a{
+    color: #fff;
+}
+.site-link a:hover{
+    cursor: pointer;
+    color: goldenrod;
+    transition: all .3s;
+    transition: ease-out .3s;
+}
+.site-link:link, .site-link:visited{
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s;
+    transition: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.carosel .dev-net{
+    padding-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-indent: 1.2rem;
+}
+#projects{
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.8rem;
+    padding: 1.2rem 2rem;
+    border-radius: 5rem;
+}
+#projects:hover{
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+    transition: transform .8s;
+}
+.dev-net #project-link{
+    font-weight: normal;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+#projects-code{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.5rem;
+    padding: 1rem 1.8rem;
+    border-radius: 5rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+#project-code-link{
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+#btn{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.5rem;
+    padding: 1rem 1.8rem;
+    border-radius: 5rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+#btnTwo{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.5rem;
+    padding: 1rem 1.8rem;
+    border-radius: 5rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+#btnThree{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.5rem;
+    padding: 1rem 1.8rem;
+    border-radius: 5rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+#btnFour{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1.5rem;
+    padding: 1rem 1.8rem;
+    border-radius: 5rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+#btn:hover{
+    cursor: pointer;
+}
+#btnTwo:hover{
+    cursor: pointer;
+}
+#btnThree:hover{
+    cursor: pointer;
+}
+#btnFour:hover{
+    cursor: pointer;
+}
+.card-img{
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+#card-title{
+    font-size: 1.5rem;
+}
+#project-content{
+    padding-top: 5rem;
+}
+/* *****************************Media Query (width < 900)************************************* */
+@media screen and (max-width: 56.25em) {
+    body{
+        padding: 0;
+        width: auto;
+    }
+    .mysite{
+        display: grid;
+        grid-template-areas: 
+        "carosel"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50rem auto 25rem;
+        height: 100%;
+    }
+    .carosel{
+        grid-area: carosel;
+    }
+    .main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: #44b2e6;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-about{
+        background-color: #f7f7f7;
+        max-width: auto;
+        padding: 10rem 5rem;
+        height: 45rem;
+        margin-top: -15vh;
+        margin-bottom: 10vh;
+        transform: skewY(-5deg);
+    }
+    .main-about{
+        transform: skewY(5deg);
+    }
+    .imp-title{
+        padding: 0;
+        margin: 0;
+        font: 2rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .imp-title:hover{
+        transform: skewY(-3deg);
+    }
+    .wrap{
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font: 1.5rem;
+        color: #000;
+        /* max-width: 50%; */
+    }
+    #main-text-content{
+        font: 1.8rem;
+        color: #000;
+        font-weight: normal;
+    }
+    .main-logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-logos img{
+        padding: .5rem;
+        max-width: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .section-main{
+        background-image: url('../img/main_auto_edited.jpg');
+        background-color: #000;
+        max-width: auto;
+        padding: 10rem 0;
+        height: auto;
+        margin-top: -25vh;
+        margin-bottom: 10vh;
+        transform: skewY(-5deg);
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cards li{
+        flex: 0 1 15rem;
+        margin: 1rem;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: .5rem;
+    }
+    .card:hover{
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+        transition: transform .5s;
+    }
+    .card-body{
+        text-align: center;
+        width: 24rem;
+        height: 23rem;
+    }
+    .section-body{
+        background-color: #f7f7f7;
+        width: 100%;
+        padding: 10rem 0;
+        height: auto;
+        margin-top: -25vh;
+    }
+    .main-body{
+        margin-top: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main-title{
+        font: 2.5rem;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        margin: 3rem;
+    }
+    .flip-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .flip-cards li{
+        flex: 0 1 23rem;
+        margin: 1.2rem;
+    }
+    .flip-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+        perspective: 1000px;
+    }    
+    .flip-card:hover .flip-card-body{
+        transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    .flip-card-front{
+        background-color: #fff;
+        color: black;
+    }
+    .flip-card-back{
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    .flip-card-body{
+        /*position: relative;*/
+        text-align: center;
+        width: 28rem;
+        height: 35rem;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    .flip-card-img{
+        width: 100%;
+        height: 12rem;
+    }
+    .flip-card-contents{
+        background-color: #fff;
+        margin-top: -3rem;
+        transform: skewY(-5deg);
+        height: auto;
+    }
+    .flip-card-content{
+        padding-top: .5rem;
+        transform: skewY(5deg);
+    }
+    .footer-creator p{
+        display: flex;
+        justify-items: right;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .footer-links a{
+        font-size: 1.2rem;
+        font-weight: normal;
+        padding: 0.6rem;
+    }
+    .footer-creator .site-link{
+        font-size: 1.2rem;
+        font-weight: normal;
+        padding: 0 .5rem;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: .1rem solid #f7f7f7;
+        margin-top: 1.5rem;
+        /* padding-top: .8rem; */
+        padding: 1rem 0;
+        /* padding-left: auto; */
+    }
+    .footer-creator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: .1rem solid #f7f7f7;
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+/* ****************************Media Query (width > 900px)********************************* */
+@media screen and (min-width: 56.26em) {
+    body{
+        width: auto;
+    }
+    .mysite{
+        display: grid;
+        grid-template-areas: 
+        "carosel"
+        "main"
+        "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 25rem;
+        height: 100%;
+    }
+    .carosel{
+        grid-area: carosel;
+        height: 66rem;
+    }
+    .main{
+        grid-area: main;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: #44b2e6;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /**************Main About*********************/
+    .section-about{
+        background-color: #f7f7f7;
+        width: 100%;
+        padding: 10rem 0;
+        height: 50rem;
+        margin-top: -25vh !important;
+        margin-bottom: 10vh;
+        transform: skewY(-5deg);
+    }
+    .main-about{
+        transform: skewY(5deg);
+    }
+    .imp-title{
+        padding: 0;
+        margin: 0;
+        font: 2rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .imp-title:hover{
+        transform: skewY(-3deg);
+    }
+    .wrap{
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: left;
+        text-align: left;
+        font: 2.5rem;
+        color: #000;
+    }
+    #main-text-content{
+        font: 2.1rem;
+        color: #000;
+        font-weight: normal;
+    }
+    .main-logos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-logos img{
+        padding: 1rem;
+        max-width: 20rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }    
+    /* ************************* Main Card ********************************* */
+    .section-main{
+        background-image: url('../img/main_auto_edited_special.png');
+        /* background-image: url('../img/main_auto_2.jpg'); */
+        background-color: #000000;
+        width: 100%;
+        padding: 10rem 0;
+        height: auto;
+        margin-top: -25vh;
+        margin-bottom: 10vh;
+        transform: skewY(-5deg);
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .cards ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* justify-items: center; */
+        align-items: center;
+    }
+    .cards li{
+        flex: 0 1 15rem;
+        margin: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: .5rem;
+    }
+    .card:hover{
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+        transition: transform .3s;
+    }
+    .card-body{
+        text-align: center;
+        width: 15rem;
+        height: 21.8rem;
+    }
+    /***************Flip Card***************************/
+    .section-body{
+        background-color: #f7f7f7;
+        width: 100%;
+        padding: 10rem 0 10rem 0;
+        height: auto;
+        margin-top: -25vh;
+    }
+    .main-body{
+        margin-top: 6rem;
+    }
+    .main-title{
+        font: 2.5rem;
+        font-weight: bold;
+        color: #000;
+        text-align: center;
+        margin: 3rem;
+    }
+    .flip-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .flip-cards ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        /* justify-items: center; */
+        align-items: center;
+    }
+    .flip-cards li{
+        flex: 0 1 23rem;
+        margin: 1.5rem;
+    }
+    .flip-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: transparent;
+        perspective: 1000px;
+    }
+    .flip-card-body{
+        /*position: relative;*/
+        text-align: center;
+        width: 23rem;
+        height: 30rem;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    .flip-card:hover .flip-card-body{
+        transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    .flip-card-front{
+        background-color: #fff;
+        color: black;
+    }
+    .flip-card-back{
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+    }
+    .flip-card-img{
+        width: 100%;
+        height: 12rem;
+    }
+    .flip-card-contents{
+        background-color: #fff;
+        margin-top: -3rem;
+        transform: skewY(-5deg);
+        height: auto;
+    }
+    .flip-card-content{
+        padding-top: .5rem;
+        transform: skewY(5deg);
+        /* background-color: #fff; */ /* Ignore to see Just another nice design */
+    }
+    /******************Footer styles**************************/
+    .logo-here{
+        width: 10rem;
+        height: auto;
+    }
+    .logo-here:hover{
+        transition: all .3s;
+    }
+    .footer-area{
+        padding: 1.5rem 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        /* justify-content: flex-start; */
+    }
+    .footer-links{
+        width: calc(100% - 5rem)/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        border-top: .1rem solid #f7f7f7;
+        padding-top: .4rem;
+        /* padding-left: auto; */
+    }
+    .footer-links a{
+        font-size: 1.2rem;
+        font-weight: normal;
+        padding: 0.6rem;
+    }
+    .footer-creator{
+        width: calc(100% - 5rem)/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        padding-left: 50rem;
+    }
+    .footer-creator p{
+        display: flex;
+        justify-items: right;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .footer-creator .site-link{
+        font-size: 1.2rem;
+        font-weight: normal;
+        padding: 0 .5rem;
+    }
+}
+/* --author{
+    dilsad;
+}-- */
